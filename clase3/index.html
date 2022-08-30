@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <h2>Sistema</h2>
+    <div id="app">
+
+        <p>Nuevo mensaje: <input v-model="nuevo" placeholder="ingrese nuevo texto"> </p>
+        <p><button @click="cambioMensaje(nuevo)">Cambiar mensaje</button></p>
+        <p> {{ mensaje }} </p>
+        <p>{{ numero }}</p>
+        <p> <button @click="incrementar">Incrementar</button> <button @click="reducir">Reducir</button> </p>
+        <p><button @click="incrementarCantidad(cant)">Incrementar por </button>
+            <input v-model.number="cant" placeholder="ingrese un número">
+            <button @click="reducirCantidad(cant)">Reducir por</button>
+        </p>
+        <p>{{ ok ? 'YES' : 'NO' }} </p>
+        <p><button @click="encendido">Boton encender</button></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
