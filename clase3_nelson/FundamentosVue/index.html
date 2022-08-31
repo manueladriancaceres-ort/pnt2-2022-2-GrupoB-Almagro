@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <h2>Sistema</h2>
+    <div id="app">
+        {{ mensaje }}
+        <p :style="myStyle2">{{numero}} &nbsp <button @click="incrementar">Incremetar</button> &nbsp
+            <button @click="decrementar">Decrementar</button> &nbsp
+            <button @click="reiniciar">Reiniciar</button></p> 
+        
+
+        <p :style="myStyle">{{ok ? 'Yes' : 'No'}} &nbsp <button @click="onoff">ON/OFF</button></p>
+
+        <h1 v-if="ok">Vue is awesome</h1>
+        <h1 v-show="ok">Hello</h1>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
