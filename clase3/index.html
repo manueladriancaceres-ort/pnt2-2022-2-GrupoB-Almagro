@@ -22,7 +22,7 @@
             <input v-model.number="cant" placeholder="ingrese un número">
             <button @click="reducirCantidad(cant)">Reducir por</button>
         </p>
-        <p>{{ ok ? 'YES' : 'NO' }} </p>
+        <p :style="myStyle">{{ ok ? 'YES' : 'NO' }} </p>
         <p><button @click="encendido">Boton encender</button></p>
     </div>
 

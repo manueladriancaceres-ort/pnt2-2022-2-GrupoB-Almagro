@@ -3,7 +3,9 @@ const obj = Vue.createApp({
         return {
             mensaje: 'Hola Vue!',
             numero: 100,
-            ok: true
+            ok: true,
+            myStyle: { color: 'red', fontSize: '50px', background: 'blue', display: 'block'},
+
         }
     },
     mounted() {
@@ -23,6 +25,11 @@ const obj = Vue.createApp({
         },
         encendido() {
            this.ok = !this.ok;
+           if (this.ok){
+            this.myStyle.background = "green";
+           } else {
+            this.myStyle.background = "yellow";
+           }
         },
         reducir(){
             this.numero--;
