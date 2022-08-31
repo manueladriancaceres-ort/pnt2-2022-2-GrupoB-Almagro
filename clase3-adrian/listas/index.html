@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <h2>Sistema</h2>
+    <div id="app">
+        <li v-for="volador in objetosVoladores">
+            {{ volador.codigo }} {{ volador.nombre }}
+        </li>
+        Nombre <input type="text" v-model="volador.nombre" />
+        <button @click="agregarVolador">Agregar Volador</button>
+        <p>{{mensajeError}}</p> 
+        <button @click="ordenarPorNombre">Ordenar por nombre</button>
+        <p>
+            Filtro por codigo<input type="text" v-model="filtro">
+            <button @click="filtroPorCodigo">Filtro por codigo</button>
+        </p>    
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+Temas de hoy, 30/8/2022
+
+Repaso de java script
+
+Primeros pasos en vuejs
+
+	Configuración por link
+	Interpolación
+	Atributos enlazados
+	Fundamentos de reactividad
+	Renderizado condicional
+	Renderizado de listas
+	Manejo de eventos
+	Input bindings (formularios)
+
+
+
+
+myStyle: { color: '', fontSize: '50px', background: 'blue', display: 'block' },
