@@ -33,7 +33,6 @@ const obj = Vue.createApp({
                 }
             });
             return mayor;
-
         }
     }
 }).mount('#app')
