@@ -26,7 +26,15 @@ const obj = Vue.createApp({
             return mayor;
         },
         filtroPorCodigo() {
-            this.objetosVoladores = this.objetosVoladores.filter(volador => volador.codigo == this.filtro);
+            let copia = [...this.objetosVoladores];
+            if (this.filtro != 0) {
+                this.objetosVoladores = this.objetosVoladores.filter(volador => volador.codigo == this.filtro);
+            } else if (this.filtro == 0) {
+                this.objetosVoladores = copia; // encontrar forma que esa copia guarde los datos anteriores
+            }
+        },
+        ordenarPorCodigo() {
+            this.objetosVoladores.sort((a, b) => a.codigo - b.codigo);
         }
     }
 }).mount('#app')

@@ -18,12 +18,13 @@
         <!-- Codigo <input type="text" v-model="volador.codigo"> -->
         Nombre <input type="text" v-model="volador.nombre">
         <button @click="agregarVolador">Agregar Volador</button>
-        <p><button @click="ordenarPorNombre">Ordenar por nombre</button></p>
+        <p><button @click="ordenarPorNombre">Ordenar por nombre</button><button @click="ordenarPorCodigo">Ordenar por Codigo</button></p>
+        <br>
         <p>
             Filtro por código<input type="text" v-model="filtro">
             <button @click="filtroPorCodigo">Filtro por codigo</button>
         </p>
-       
+
     </div>
 
     <script src="indexListas.js"></script>
