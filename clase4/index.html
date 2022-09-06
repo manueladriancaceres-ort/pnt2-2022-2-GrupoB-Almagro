@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <h1> ITNEW </h1>
+    <div id="app">
+        <p>{{ factura }}</p>
+        <p :style="myStyle">{{ factura.titulo }}</p>
+        <p>Factura</p>
+        <input type="text" v-model="descripcionDelItem" placeholder="Ingrese su item"> 
+        <br>
+        <br>
+        <button @click="agregarItem">Agregar Item</button> 
+        <br>
+        <br>
+        <button @click="cambiarColorTitulo">Cambiar color del título</button>
+        <br>
+        <br>
+        <button @click="ordenarPorDescripcion">Ordenar por descripción</button>
+        <br>
+        <br>
+        <button @click="mostrarFactura">Mostrar factura por consola</button>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
