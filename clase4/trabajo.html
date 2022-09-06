@@ -1,0 +1,39 @@
+<!-- • Un titulo
+• Código de factura
+• Número de cliente
+• Lista de ítems de la factura
+• Un campo para agregar un item
+• Un botón para agregar un item
+• Un botón para cambiar el color del titulo
+• Un botón para ordenar los ítems por descripción
+• Un botón para imprimir en consola los datos de la factura en formato JSON  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/vue@3"></script>
+    <h1>IT NEW</h1>
+
+    <div id="app">
+        <p :style="myStyle"> {{factura.titulo}} </p>
+        <p> {{factura}} </p>
+        Item <input type="text" v-model="factura.items.descripcion">
+        <button @click="agregarItem">Agregar Item</button>
+        
+        <p><button @click="cambiarColorTitulo">Cambiar color titulo</button></p>
+
+        <p><button @click="ordenarXDescripcion">Ordenar items por descripción</button></p>
+
+        <p><button @click="mostrarFactura">Mostrar factura por consola</button></p>
+        
+
+    </div>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
