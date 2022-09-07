@@ -16,6 +16,8 @@ const obj = Vue.createApp({
         cambiarColorTitulo() {
             if (this.myStyle.color == 'green') {
                 this.myStyle.color = 'red';
+            } else if (this.myStyle.color == 'red') {
+                this.myStyle.color = 'blue';
             } else {
                 this.myStyle.color = 'green';
             }
@@ -23,9 +25,9 @@ const obj = Vue.createApp({
         ordenarXDescripcion() {
             this.factura.items.sort((a, b) => a.descripcion.localeCompare(b.descripcion));
         },
-        mostrarFactura(){
+        mostrarFactura() {
             console.log(this.factura)
-            this.factura.items.forEach(item => {console.log(item)})
+            this.factura.items.forEach(item => { console.log(item) })
         }
     }
 }).mount('#app')

@@ -13,13 +13,13 @@
 
 <head>
     <script src="https://unpkg.com/vue@3"></script>
-    <h1>IT NEW</h1>
+    <h1>Trabajo</h1>
 
     <div id="app">
         <p :style="myStyle"> {{factura.titulo}} </p>
         <p> {{factura}} </p>
-        Item <input type="text" v-model="factura.items.descripcion">
-        <button @click="agregarItem">Agregar Item</button>
+        Item <input id="elemento" type="text" v-model="factura.items.descripcion" onfocus="this.value=''">
+        <button @click="agregarItem" >Agregar Item</button>
         
         <p><button @click="cambiarColorTitulo">Cambiar color titulo</button></p>
 
