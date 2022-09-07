@@ -1,7 +1,7 @@
 const obj = Vue.createApp({
     data() {
         return {
-            factura:{titulo: "TituloDeLaFactura", codigo: 0, nroCliente: 0, items: [{ descripcion: '' }]},
+            factura:{titulo: "TituloDeLaFactura", codigo: 0, nroCliente: 0, items: []},
             descripcionDelItem: '' ,
             myStyle: { color: 'red', fontSize: '35px', display: 'inline'}
 
@@ -11,7 +11,7 @@ const obj = Vue.createApp({
     methods: {
         agregarItem() {
             this.factura.items.push({descripcion: this.descripcionDelItem})
-            
+
         },
 
         cambiarColorTitulo() {

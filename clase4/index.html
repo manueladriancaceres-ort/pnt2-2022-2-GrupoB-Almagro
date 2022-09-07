@@ -8,13 +8,16 @@
 </head>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
-    <h1> ITNEW </h1>
-    <div id="app">
-        <p>{{ factura }}</p>
+    <center><h1> ITNEW </h1></center>
+    <div id="app">        
         <p :style="myStyle">{{ factura.titulo }}</p>
+        <br>
+        <br>
+        <li v-for="item in factura.items">
+            {{ item.descripcion }}
+        </li>
         <p>Item &nbsp<input id="elemento" type="text" v-model="descripcionDelItem" 
             placeholder="Ingrese su item" onfocus="this.value=''"></p>
-        <br>
         <button @click="agregarItem">Agregar Item</button> 
         <br>
         <br>
