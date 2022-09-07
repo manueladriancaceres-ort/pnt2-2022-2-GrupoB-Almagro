@@ -19,14 +19,16 @@
         <p :style="myStyle"> {{factura.titulo}} </p>
         <p> {{factura}} </p>
         Item <input id="elemento" type="text" v-model="factura.items.descripcion" onfocus="this.value=''">
-        <button @click="agregarItem" >Agregar Item</button>
-        
+        <button @click="agregarItem">Agregar Item</button>
+        <li v-for="item in factura.items">
+            {{item.descripcion}}
+        </li>
         <p><button @click="cambiarColorTitulo">Cambiar color titulo</button></p>
 
         <p><button @click="ordenarXDescripcion">Ordenar items por descripción</button></p>
 
         <p><button @click="mostrarFactura">Mostrar factura por consola</button></p>
-        
+
 
     </div>
     <script src="index.js"></script>

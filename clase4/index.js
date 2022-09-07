@@ -5,6 +5,8 @@ const obj = Vue.createApp({
                 titulo: 'Titulo Factura', codigo: 5, nroCliente: 3, items: [{ descripcion: 'null' }]
             },
             myStyle: { color: 'green', fontSize: '50px' },
+           
+
         }
     },
 
@@ -26,8 +28,7 @@ const obj = Vue.createApp({
             this.factura.items.sort((a, b) => a.descripcion.localeCompare(b.descripcion));
         },
         mostrarFactura() {
-            console.log(this.factura)
-            this.factura.items.forEach(item => { console.log(item) })
+            console.log(JSON.stringify(this.factura)) // JSON.stringify se usa para convertir un valor en JSON
         }
     }
 }).mount('#app')
