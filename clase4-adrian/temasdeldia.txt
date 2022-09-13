@@ -1,0 +1,14 @@
+Temas del dia, 1/9
+
+	Repaso sobre vuejs
+	Ejercicio en grupo
+	Cronograma
+	Fecha parcial
+	Kahoot!
+
+Componentes
+	Conceptos
+	Registro
+	Props
+	Events
+
