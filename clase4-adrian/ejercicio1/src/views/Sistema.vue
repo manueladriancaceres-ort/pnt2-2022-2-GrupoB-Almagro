@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div  class="container">
     <h2>Mi proyecto</h2>
     {{texto}}
   </div>

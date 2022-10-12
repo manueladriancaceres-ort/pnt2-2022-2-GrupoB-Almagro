@@ -1,0 +1,9 @@
+
+
+Una empresa de e-comerce, quiere renovar su sitio web, agregando un sistema
+de tipo spa (single page application). Para lo cual requiere un sistema demo
+para ver su desempeño.
+
+Este sistema debe implementar un crud de ..., 
+una lista de ... para seleccionar,
+y un carrito de compras.

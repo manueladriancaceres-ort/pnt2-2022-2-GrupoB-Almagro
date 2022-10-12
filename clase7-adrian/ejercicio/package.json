@@ -1,5 +1,5 @@
 {
-  "name": "ejercicio1",
+  "name": "ejercicio",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,9 +7,9 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "bootstrap": "^5.2.1",
-    "bootstrap-vue-3": "^0.3.3",
-    "vue": "^3.2.38"
+    "pinia": "^2.0.21",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",

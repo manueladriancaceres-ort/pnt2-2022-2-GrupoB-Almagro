@@ -1,4 +1,4 @@
-Temas del dia, 8/9
+Temas del dia, 13/9
 
 	Repaso sobre vuejs
 
